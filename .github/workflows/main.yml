@@ -31,7 +31,7 @@ jobs:
 
     - name: Export APK
       run: |
-        ./godot --export "Android" release.apk
+        ./godot --headless --export "Android" release.apk
       env:
         KEYSTORE_PATH: ${{ secrets.KEYSTORE_PATH }}
         KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
